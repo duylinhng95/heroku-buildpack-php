@@ -2,6 +2,10 @@
 
 ## v???? (2019-??-??)
 
+### ADD
+
+- Add -H option to heroku-php-nginx to allow inclusion of config fragment at the "http" level (#84) [David Zuelke]
+
 ### CHG
 
 - Restructure Nginx configs and add compatibility with Nginx/1.9.3+ (#198) [David Zuelke]

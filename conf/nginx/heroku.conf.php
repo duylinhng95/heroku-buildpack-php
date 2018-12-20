@@ -27,6 +27,10 @@ http {
 		keepalive 16;
 	}
 
+<?php if(getenv('HEROKU_PHP_NGINX_HTTP_INCLUDE')): ?>
+	include "<?=getenv('HEROKU_PHP_NGINX_HTTP_INCLUDE')?>";
+<?php endif; ?>
+
 	server {
 		# define an easy to reference name that can be used in try_files
 		location @heroku-fcgi {
